@@ -1,0 +1,72 @@
+body {
+  background-color: #fdf6e3;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+header {
+  font-family: sans-serif;
+}
+
+.logo {
+  text-transform: uppercase;
+}
+
+.wrapper {
+  background-color: #eee8d5;
+}
+
+#contents{
+  color: #93a1a1;
+}
+#favs {
+  color: #93a1a1;
+}
+
+#facts {
+  color: #93a1a1;
+}
+#types {
+  color: #93a1a1;
+}
+
+.wrapper > div [class|="dfn"] {
+  background-color: #b58900;
+}
+p + [class*="Botanically"] {
+  color: #fff;
+}
+
+[href^="http"] {
+  background-color: #719e07;
+}
+
+[href^="http"]:not(no-highlight) {
+  background-color: none
+}
+
+[rel="external"] {
+  background-color: #2694d8;
+}
+
+ol li:first-child {
+  color: #719e47;
+}
+
+ol li:last-child {
+  color: #2aa198;
+}
+
+.type li:nth-child(odd) {
+  background-color: #657ba3;
+}
+
+.type li:nth-child(even) {
+  background-color: #586e75;
+}
+
+.type li:nth-child(3n) {
+  background-color: #d04b16;
+}
