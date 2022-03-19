@@ -1,6 +1,6 @@
-body {
+html {
+  box-sizing: border-box;
   background-color: #fdf6e3;
-  font-size: 1.5rem;
 }
 
 *, *::before, *::after {
@@ -8,6 +8,14 @@ body {
 }
 
 header {
+  font-size: 1.5rem;
+}
+
+footer p {
+  font-size: 1.5rem;
+}
+
+nav ul {
   font-family: sans-serif;
 }
 
@@ -19,9 +27,10 @@ header {
   background-color: #eee8d5;
 }
 
-#contents{
+#contents {
   color: #93a1a1;
 }
+
 #favs {
   color: #93a1a1;
 }
@@ -29,25 +38,28 @@ header {
 #facts {
   color: #93a1a1;
 }
+
 #types {
   color: #93a1a1;
 }
 
-.wrapper > div [class|="dfn"] {
+h2 + div {
   background-color: #b58900;
 }
-p + [class*="Botanically"] {
+
+p + strong {
   color: #fff;
 }
 
-[href^="http"] {
+ul li a:not(.no-highlight) {
   background-color: #719e07;
 }
 
-[href^="http"]:not(no-highlight) {
+a:link :not(.no-highlight) {
+  background-color: transparent;
 }
 
-[rel="external"] {
+[href^="http://en.wikipedia.org/wiki/Fruit"] {
   background-color: #2694d8;
 }
 
@@ -59,14 +71,14 @@ ol li:last-child {
   color: #2aa198;
 }
 
-.type li:nth-child(odd) {
-  background-color: #657ba3;
-}
-
-.type li:nth-child(even) {
+.types li:nth-child(even) {
   background-color: #586e75;
 }
 
-.type li:nth-child(3n) {
+.types li:nth-child(odd) {
+  background-color: #657ba3;
+}
+
+.types li:nth-child(3) {
   background-color: #d04b16;
 }
